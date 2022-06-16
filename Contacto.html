@@ -3,16 +3,15 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Contacto - Barberia Alura!</title>
-        <link rel="stylesheet" href="reset.css"> <!--limpia los estilos predeterminados por el navegador,se coloca aca para no borrar los estilos de la pagina-->
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="Style.css">
+        <title>Contacto - Barberia Alura!</title>
     </head>
 
     <body>
-        <header><!--Encabezado-->
+        <header>
             <div class="caja">
                 <h1><img src="imagenes/logo.png" alt="Logo de la Barberia Alura"></h1>
-                <!--ALT descripcion de la imagen-->
                     <nav>
                         <ul>
                             <li><a href="Index1.html">Home</a></li>
@@ -26,50 +25,44 @@
         <main>
             <form>
                 <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido" class="input-padron" required> <!--el ID es para conectar con el LABEL mediate el FOR-->
+                <input type="text" id="nombreapellido" class="input-padron" required>
 
                 <label for="correoelectronico">Correo Electronico</label>
                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
-                <label for="teléfono">Teléfono</label> <!--Titulo de la entrada de datos, ej TELEFONO-->
-                <input type="tel" id="teléfono" class="input-padron" required placeholder="(xx) xxxx xxxx"> <!--Crea el espacio para completar los datos "BOX"-->
-                <!--REQUIRED hace que ese campo sea obligatorio-->
-                <!--PLACEHOLDER ayuda a que el usuario sepa con que tiene que completar-->
+                <label for="teléfono">Teléfono</label> 
+                <input type="tel" id="teléfono" class="input-padron" required placeholder="(xx) xxxx xxxx">
 
                 <label for="mensaje">Mensaje:</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
 
-
-                    <fieldset><!--hacen referencia a los mismos datos-->
-                        <legend>¿Como quiere que lo contactemos?</legend> <!--se usa para los titulos en vez de P-->
+                    <fieldset>
+                        <legend>¿Como quiere que lo contactemos?</legend>
 
                         <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label> 
-                        <!--RADIO creo el cirulito para seleccionar la opcion que uno desee-->
                         
                         <label for="radio-tel"> <input type="radio" name="contacto" value="telefono" id="radio-tel">Telefono</label>
 
                         <label for="radio-wa"><input type="radio" name="contacto" value="whatsapp" id="radio-wa" checked>WhatsApp</label>
-                        <!--NAME solo deja que se selecciones una de las opciones ya que pertenecen al mismo grupo-->
-                        <!--CHECKED deja esa opcion como predeterminada-->
                     </fieldset>
 
                     <fieldset>
                         <legend>¿En que horario prefiere que lo contacten?</legend>
                         <select>
-                            <option>Mañana</option> <!--crea iteams seleccionables de un SELECT-->
+                            <option>Mañana</option>
                             <option>Tarde</option>
                             <option>Noche</option>
                         </select>
                     </fieldset>
                     
                 <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
-                    <!--CHECKBOX crea un cuadradito para poder seleccionar si se quiere esa opcion-->
-                <input type="submit" value="Enviar Formulario" class="enviar"> <!--Boton para enviar el form, sin el value solo va a decir ENVIAR-->
+                <input type="submit" value="Enviar Formulario" class="enviar"> 
             </form>
-            <table> <!--si hubiera varias tablas es mejor porner CLASS en c/u para poder hacer mejor el css-->
-                <thead> <!--Encabezado, ya se centra solo ya que se reconoce que es un encabezado-->
-                <tr> <!--Filas-->
-                    <th>Dia</th> <!--Columnas-->
+
+            <table> 
+                <thead> 
+                <tr>
+                    <th>Dia</th>
                     <th>Horario</th>
                 </tr>
             </thead>
@@ -90,9 +83,9 @@
             </table>
         </main>
 
-        <footer> <!--Permite poner el pie de pagina-->
+        <footer>
             <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
-            <p class="copyright">&copy Copyright Barberia Alura - 2020.</p>
+            <p class="copyright">&copy; Copyright Barberia Alura - 2020.</p>
         </footer>
     </body>
 </html> 

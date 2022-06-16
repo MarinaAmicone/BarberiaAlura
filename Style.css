@@ -6,7 +6,9 @@
         background-color: lightgrey;
         padding: 20px 0;
     }
+
 /*HOME*/
+
     .caja{
         width: 940px;
         position: relative;
@@ -20,138 +22,22 @@
     }
 
     nav li{
-        display: inline; /*ocupa menos lugar*/
-        margin: 0 0 0 15px; /*arriba derecha abajo izquierda*/
+        display: inline;
+        margin: 0 0 0 15px;
     }
 
     nav a{
-        text-transform: uppercase; /* el "UPPERCASE" vuelve la letra en mayuscula */
+        text-transform: uppercase;
         color: black;
-        font-weight: bold; /*negrita */
+        font-weight: bold;
         font-size: 22px;
-        text-decoration: none; /*para que no tenga el subrayado abajo de cada palabra*/
+        text-decoration: none;
     }
 
-    nav a:hover{ /*:HOVER captura el movimiento del mouse CUANDO PASA para RESALTAR ALGUNA CARACTERISTICA*/
+    nav a:hover{
         color: #c78c19;
         text-decoration: underline;
     }
-
-/*CSS PRODUCTOS*/
-
-    .productos{
-        width: 940px;
-        margin: 0 auto;
-        padding: 50px;
-    }
-
-    .productos li{
-        display: inline-block;
-        text-align: center;
-        width: 30%;
-        vertical-align: top;
-        margin: 0 1.5%;
-        padding: 30px 20px; /*vertical horizatal*/
-        box-sizing: border-box; /*es el limite del espacio que se define, no sobrepasa el padding que se le puse*/
-        border: 2px solid black; /* borde solido negro de 2px entre en padding y el margen, se pueden colocar juntos para abreviar codigo*/
-        border-radius: 10px; /*borde superior izquierdo, en sentido del reloj.SI se pone solo uno es para todos el mismo*/
-    }
-
-    .productos li:hover{
-        border-color: #c78c19;
-    }
-
-    .productos li:active{ /*:ACTIVE captura el movimiento del mouse CUANDO SE HACE CLICK para RESALTAR ALGUNA CARACTERISTICA*/
-        border-color: #088c19; /*por ejemplo,ACA CAMBIA DE COLOR CUANDO SE CLICKEA*/
-    }
-
-    .productos h2{
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .productos li:hover h2{ /*cambia el tamanho para la fuente,SE HACE YA QUE "H2" ya tenia puesto un tamanho,SOLO se puede modificar para cuando clickas de esta manera*/
-        font-size: 33px;
-    }
-
-    .prod-desc{
-        font-size: 18px;
-    }
-
-    .prod-precio{
-        font-size: 23px;
-        font-weight: bold;
-        margin: 10px;
-    }
-
-    footer{
-        text-align: center;
-        background: url(imagenes/bg.jpg); /*Por defecto CSS copia y paga la imagen varias veces para poder ocuoar todo el ancho*/
-        padding: 40px;
-    }
-
-    .copyright{
-        color: white;
-        font-size: 13px;
-        margin: 20px;
-    }
-
-/*CSS CONTACTO*/
-
-    form{
-        margin: 40px 0;
-    }
-
-    form label, form legend{ /*se puede aplicar el mismo estilo separando por una coma*/
-        display: block;
-        font-size: 20px;
-        margin: 0 0 10px; /* 0 superior, 0 derecha, 10 abajo*/
-    }
-
-    .input-padron{
-        display: block;
-        margin: 0 0 20px;
-        padding: 10px 25px; /*cambia el espaciado interno,entre el contenido y el borde. 10 para arriba y abajo, 25 los costados*/
-        width: 50%;
-    }
-
-    .checkbox{
-        margin: 20px 0;
-    }
-
-    .enviar{
-        width: 40%;
-        padding:  15px 0;
-        font-size: 18 px;
-        font-weight: bold;
-        color: white;
-        background: orange;
-        border: none;
-        border-radius: 5px; /*bordes redondeados*/
-        transition: 1s all; /*hace que se pueda ver el cambio que se realiza mas lento TODAS las propiedades*/
-        cursor: pointer; /*cambiar por la MANITO en vez de la FLECHA*/
-    }
-
-    .enviar:hover{
-        background: darkorange;
-        transform: scale(1.2); /*aumenta un elemento proporcionalmente*/
-        /*rotate(70deg) deg grados) rota el boton en los grados que uno le diga*/
-    }
-
-    table{
-        margin: 40px 40px;
-    }
-    thead{
-        background: #555555;
-        color: white;
-        font-weight: bold;
-    }
-    td, th{
-        border: 1px solid black;
-        padding: 8px 15px;
-    }
-
-/*CSS HOME*/
 
     .banner{
         width: 100%;
@@ -166,9 +52,9 @@
 
     .titPrincipal{
         text-align: center;
-        font-size: 2em; /*dos veces el tamanio padron que ya tiene*/
+        font-size: 2em;
         margin: 0 0 1em;
-        clear: left; /*(LIMPIA el FLOAT)hace que la imag UTENSILLOS solo aplique sus modif en donde queremos y no para todo*/
+        clear: left;
     }
 
     .titPrincipal:first-letter{
@@ -195,8 +81,7 @@
 
     .mapa{
         padding: 3em 0;
-        background: linear-gradient(#FEFEFE, #888888); /*hacer un degrade de colores horizontal,90deg vertical*/
-        /*background: radial-gradient(#fefefe, #888888);circular*/
+        background: linear-gradient(#FEFEFE, #888888);
     }
 
     .mapa p{
@@ -227,21 +112,20 @@
     }
 
     .items{
-        line-height: 1.5; /*Agranda la letra en un 50%*/
+        line-height: 1.5;
     }
     .items:before{
         content: "★";
     }
 
-    .items:first-child{ /*primer elemento del item, pseudo clase*/
+    .items:first-child{
         font-weight: bold;
     }
 
     .imagDif{
         width: 60%;
         transition: 400ms;
-        box-shadow: 10px 10px 30px 15px black; /*para colocar sombras,10 eje horizontal,10 eje vertical,difuminacion,expacion de la sombra y el color. Se pueden agregar mas sombras sepadas por coma*/
-        /*box-shadow: inset 0 0 30px red (hace una sobra interna con extencion de 30px)*/
+        box-shadow: 10px 10px 30px 15px black;
     }
 
     .imagDif:hover{
@@ -266,4 +150,117 @@
         .listasDif, .imagDif{
             width: 100%;
         }
+    }
+
+/*PRODUCTOS*/
+
+    .productos{
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .productos li{
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .productos li:hover{
+        border-color: #c78c19;
+    }
+
+    .productos li:active{
+        border-color: #088c19;
+    }
+
+    .productos h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .productos li:hover h2{
+        font-size: 33px;
+    }
+
+    .prod-desc{
+        font-size: 18px;
+    }
+
+    .prod-precio{
+        font-size: 23px;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    footer{
+        text-align: center;
+        background: url(imagenes/bg.jpg);
+        padding: 40px;
+    }
+
+    .copyright{
+        color: white;
+        font-size: 13px;
+        margin: 20px;
+    }
+
+/*CONTACTO*/
+
+    form{
+        margin: 40px 0;
+    }
+
+    form label, form legend{
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+
+    .input-padron{
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        width: 50%;
+    }
+
+    .checkbox{
+        margin: 20px 0;
+    }
+
+    .enviar{
+        width: 40%;
+        padding:  15px 0;
+        font-size: 18 px;
+        font-weight: bold;
+        color: white;
+        background: orange;
+        border: none;
+        border-radius: 5px;
+        transition: 1s all;
+        cursor: pointer;
+    }
+
+    .enviar:hover{
+        background: darkorange;
+        transform: scale(1.2);
+    }
+
+    table{
+        margin: 40px 40px;
+    }
+    thead{
+        background: #555555;
+        color: white;
+        font-weight: bold;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 8px 15px;
     }
